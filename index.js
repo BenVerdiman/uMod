@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const invite = new Discord.Invite();
 const ifmsg = "No";
 const msg = "No";
 const { token } = require('./config.json');
@@ -29,8 +28,6 @@ client.on("message", message => {
   if(message.author.tag == 'LencherOfficial#0001'){
     sendif("uhecker", "no u");
   }
-  if(message.content == "uinvite"){
-    console.log(message.mentions);
-  }
+  
 });
 client.login(token);
